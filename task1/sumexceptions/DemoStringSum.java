@@ -5,7 +5,7 @@ package task1.sumexceptions;
  */
 public class DemoStringSum {
   public static void main(String[] args) throws InvalidString {
-    StringSum test=new StringSum();
-    System.out.println(test.sumString("1","aui"));
+    Sumator test=new Sumator();
+    System.out.println(test.sum("1","aui"));
   }
 }
