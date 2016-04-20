@@ -13,7 +13,7 @@ public class DemoEx1 {
     String str2 = sc.nextLine();
     String sum = "";
     try {
-      sum = su.stringSum(str1, str2);
+      sum = su.Sum(str1, str2);
     } catch (NumberFormatException e) {
       throw new IntegersOnlyStringException();
     }
