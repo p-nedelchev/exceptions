@@ -44,7 +44,7 @@ public class Sumator {
 
         } catch (NumberFormatException ex) {
             //either a or b is not a number
-            result = "Invalid input";
+            result = "The input must be number";
 
 
         }

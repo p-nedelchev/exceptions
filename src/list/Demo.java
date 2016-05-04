@@ -9,6 +9,7 @@ public class Demo {
         ls.add(123);
         ls.add(123);
         ls.add(123);
+
         System.out.println(ls.printAllElements());
         ls.remove();
         System.out.println(ls.printAllElements());
@@ -23,7 +24,11 @@ public class Demo {
         System.out.println(ls.printAllElements());
         ls.add(231);
         System.out.println(ls.printAllElements());
-        ls.add(321321);
+
+        ls.remove();
+        ls.remove();
+        ls.remove();
+        ls.remove();
 
 
     }

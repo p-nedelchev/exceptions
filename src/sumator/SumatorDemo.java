@@ -9,6 +9,6 @@ import java.math.BigInteger;
 public class SumatorDemo {
     public static void main(String[] args) {
         Sumator sumator = new Sumator();
-        System.out.println(sumator.sum("dsada","dsad"));
+        System.out.println(sumator.sum("ghfghf","5"));
     }
 }
