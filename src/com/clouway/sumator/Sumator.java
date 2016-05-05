@@ -1,4 +1,4 @@
-package sumator;
+package com.clouway.sumator;
 
 
 import java.math.BigDecimal;

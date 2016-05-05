@@ -1,4 +1,4 @@
-package list;
+package com.clouway.list;
 
 /**
  * Created by clouway on 03.05.16.

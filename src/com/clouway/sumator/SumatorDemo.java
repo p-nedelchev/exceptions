@@ -1,7 +1,4 @@
-package sumator;
-
-import java.math.BigDecimal;
-import java.math.BigInteger;
+package com.clouway.sumator;
 
 /**
  * Created by clouway on 14.04.16.
