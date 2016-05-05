@@ -25,7 +25,7 @@ public class List {
             array[index] = object;
             index++;
         } else {
-            throw new ArrayIsFull();
+            throw new ArrayIsFullException();
         }
     }
 
@@ -40,7 +40,7 @@ public class List {
             array[index - 1] = null;
             index--;
         } else if (array[0] == null) {
-            throw new ArrayIsEmpty();
+            throw new ArrayIsEmptyException();
         }
 
 

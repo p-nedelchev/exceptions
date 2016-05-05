@@ -9,26 +9,8 @@ public class Demo {
         ls.add(123);
         ls.add(123);
         ls.add(123);
+        ls.add(222);
 
-        System.out.println(ls.printAllElements());
-        ls.remove();
-        System.out.println(ls.printAllElements());
-        ls.remove();
-        System.out.println(ls.printAllElements());
-        ls.remove();
-        System.out.println(ls.printAllElements());
-        System.out.println(ls.printAllElements());
-        ls.add(323);
-        System.out.println(ls.printAllElements());
-        ls.add(323);
-        System.out.println(ls.printAllElements());
-        ls.add(231);
-        System.out.println(ls.printAllElements());
-
-        ls.remove();
-        ls.remove();
-        ls.remove();
-        ls.remove();
 
 
     }
