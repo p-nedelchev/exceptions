@@ -10,12 +10,12 @@ public class SummedString {
      * @param two second string
      * @return String
      */
-    public String sum(String one, String two)throws IntegerFormatException {
+    public String sum(String one, String two)throws NotIntegerException {
         try {
             return String.valueOf(parseInt(one) + parseInt(two));
         }
         catch (NumberFormatException e){
-            throw new IntegerFormatException();
+            throw new NotIntegerException();
         }
         catch (Exception e){
             System.out.println(e);
