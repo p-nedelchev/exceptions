@@ -1,10 +1,10 @@
 package com.clouway.task3;
 
-public class ArrayOperation {
+public class Array {
   public Object[] array;
   public int index = 0;
 
-  public ArrayOperation(int length) {
+  public Array(int length) {
     this.array = new Object[length];
   }
 
