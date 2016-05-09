@@ -3,9 +3,11 @@
  */
 public class IntegerFormatException extends Exception {
 
+
     public IntegerFormatException(){
             super("Input only integers");
         }
+
 
 
 }
