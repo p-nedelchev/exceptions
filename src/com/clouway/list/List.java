@@ -20,7 +20,7 @@ public class List {
      * @param object
      * @throws Exception
      */
-    public void add(Object object) throws Exception {
+    public void add(Object object) throws ArrayIsFullException {
         if (index < array.length) {
             array[index] = object;
             index++;
@@ -34,7 +34,7 @@ public class List {
      *
      * @throws Exception
      */
-    public void remove() throws Exception {
+    public void remove() throws ArrayIsEmptyException {
 
         if (index != 0) {
             array[index - 1] = null;
@@ -48,7 +48,7 @@ public class List {
 
     public String printAllElements() {
         String str = "";
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < index; i++) {
 
             str += (array[i] + " ");
 
