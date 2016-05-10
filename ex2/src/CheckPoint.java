@@ -11,6 +11,11 @@ public class CheckPoint {
         this.min = min;
     }
 
+    /**
+     * Checking number if it out of bounds
+     * @param number checked number
+     * @throws OutOfBoundException
+     */
     public void check(int number) throws OutOfBoundException {
         if (number< min || number >max){
             throw new OutOfBoundException();
