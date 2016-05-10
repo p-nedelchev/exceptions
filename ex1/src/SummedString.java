@@ -4,6 +4,7 @@ import static java.lang.Integer.parseInt;
  * Created by clouway on 09.05.16.
  */
 public class SummedString {
+
     /**
      * Sum two strings parsed to integer
      * @param one first string
