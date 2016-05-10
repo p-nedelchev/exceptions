@@ -10,8 +10,6 @@ public class DemoSummedString {
             System.out.println(strings.sum("a9", "-2"));
         } catch (IntegerFormatException e) {
             e.printStackTrace() ;
-
         }
-
     }
 }
