@@ -9,8 +9,8 @@ public class InputScanner {
      * @param z Is for out of range and throws RangeException
      * @throws RangeException
      */
-    public void checkInput(int z) throws RangeException {
-        if (z < 0 || z > 100) {
+    public void checkInput(int z, int x, int y) throws RangeException {
+        if (z < x || z > y) {
             throw new RangeException();
         }
     }

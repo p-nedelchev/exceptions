@@ -7,19 +7,6 @@ import task1.sumator.InvalidString;
  */
 public class NumSumator {
     /**
-     * Checks if the input is string or not
-     * @param a String to be checked
-     * @throws InvalidString
-     */
-    private void check(String a) throws InvalidString {
-        try {
-            Integer.valueOf(a);
-        } catch (IllegalArgumentException z) {
-            throw new InvalidString(a);
-        }
-    }
-
-    /**
      *
      * @param a First num
      * @param b Second num
@@ -27,9 +14,22 @@ public class NumSumator {
      * @throws InvalidString
      */
     public int sum(String a, String b) throws InvalidString {
-        check(a);
-        check(b);
+        num(a);
+        num(b);
         int sum = Integer.valueOf(a) + Integer.valueOf(b);
         return sum;
+    }
+
+    /**
+     * Checks if the input is string or not
+     * @param a String to be checked
+     * @throws InvalidString
+     */
+    private void num(String a) throws InvalidString {
+        try {
+            Integer.valueOf(a);
+        } catch (IllegalArgumentException z) {
+            throw new InvalidString(a);
+        }
     }
 }

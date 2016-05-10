@@ -4,7 +4,7 @@ package task3.array;
  * Created by clouway on 10.05.16.
  */
 public class Array {
-    public int z = 0;
+    public int index = 0;
     public int[] array;
 
     /**
@@ -21,11 +21,11 @@ public class Array {
      * @throws EmptyException
      */
     public void removeElement() throws EmptyException {
-        if (array[z - 1] == 0) {
+        if (array[index - 1] == 0) {
             throw new EmptyException();
         } else {
-            array[z - 1] = 0;
-            z--;
+            array[index - 1] = 0;
+            index--;
         }
     }
 
@@ -35,9 +35,9 @@ public class Array {
      * @throws FullException
      */
     public void addElement(int data) throws FullException {
-        if (z < array.length) {
-            array[z] = data;
-            z++;
+        if (index < array.length) {
+            array[index] = data;
+            index++;
         } else {
             throw new FullException(data);
         }
@@ -47,12 +47,13 @@ public class Array {
      * Prints the array
      * @throws EmptyException
      */
-    public void printArray() throws EmptyException {
-        if (array[z] == 0) {
-            throw new EmptyException();
+    public String printAllElements() {
+        String printAllElements = "";
+        for (int i = 0; i < index; i++) {
+
+            printAllElements += (array[i] + " ");
+
         }
-        for (int i = 0; i < z; i++) {
-            System.out.println(array[i]);
-        }
+        return printAllElements;
     }
 }

@@ -12,7 +12,7 @@ public class Demo {
         int a;
         while (scanner.hasNext()) {
             a = scanner.nextInt();
-            checker.checkInput(a);
+            checker.checkInput(a, 0, 100);
         }
     }
 }
