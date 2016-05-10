@@ -4,8 +4,6 @@
 public class NotIntegerException extends Exception {
 
     public NotIntegerException(){
-            super("Input only integers in to string");
+            super("Input only integers");
         }
-
-
 }
