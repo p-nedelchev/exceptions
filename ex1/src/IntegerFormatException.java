@@ -1,10 +1,10 @@
 /**
  * Created by clouway on 09.05.16.
  */
-public class IntegerFormatException extends Exception {
+public class NotIntegerException extends Exception {
 
 
-    public IntegerFormatException(){
+    public NotIntegerException(){
             super("Input only integers");
         }
 }
