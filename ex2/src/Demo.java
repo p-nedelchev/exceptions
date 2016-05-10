@@ -13,9 +13,17 @@ public class Demo {
 
         try {
             checker.check(number);
+            System.out.println(number);
         } catch (OutOfBoundException e) {
             e.printStackTrace();
         }
 
+        try{
+            checker2.check(number);
+            System.out.println(number);
+        }
+        catch (OutOfBoundException e){
+            e.printStackTrace();
+        }
     }
 }
