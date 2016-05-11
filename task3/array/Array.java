@@ -4,20 +4,20 @@ package task3.array;
  * Created by clouway on 10.05.16.
  */
 public class Array {
-    public int index = 0;
-    public int[] array;
+    private int index = 0;
+    private int[] array;
 
     /**
-     * Initializes the array
-     * @param size
+     * Constructor
+     * @param size Array size
      */
-    public void iniArray(int size) {
-        array = new int[size];
-
+    public Array(int size) {
+        this.array = new int[size];
     }
 
     /**
      * Removes an element from the array
+     *
      * @throws EmptyException
      */
     public void removeElement() throws EmptyException {
@@ -31,6 +31,7 @@ public class Array {
 
     /**
      * Adds an element to the array
+     *
      * @param data Adds new element else throws FullException
      * @throws FullException
      */
@@ -41,18 +42,18 @@ public class Array {
         } else {
             throw new FullException(data);
         }
+
     }
 
     /**
-     * Prints the array
-     * @throws EmptyException
+     * Prints the elements
+     *
+     * @return Returns the elements
      */
     public String printAllElements() {
         String printAllElements = "";
         for (int i = 0; i < index; i++) {
-
             printAllElements += (array[i] + " ");
-
         }
         return printAllElements;
     }
