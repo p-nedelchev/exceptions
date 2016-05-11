@@ -18,11 +18,11 @@ public class Array {
     /**
      * Removes an element from the array
      *
-     * @throws EmptyException
+     * @throws EmptyArrayException
      */
-    public void removeElement() throws EmptyException {
+    public void removeElement() throws EmptyArrayException {
         if (array[index - 1] == 0) {
-            throw new EmptyException();
+            throw new EmptyArrayException();
         } else {
             array[index - 1] = 0;
             index--;
@@ -32,17 +32,16 @@ public class Array {
     /**
      * Adds an element to the array
      *
-     * @param data Adds new element else throws FullException
-     * @throws FullException
+     * @param data Adds new element else throws FullArrayException
+     * @throws FullArrayException
      */
-    public void addElement(int data) throws FullException {
+    public void addElement(int data) throws FullArrayException {
         if (index < array.length) {
             array[index] = data;
             index++;
         } else {
-            throw new FullException(data);
+            throw new FullArrayException(data);
         }
-
     }
 
     /**
