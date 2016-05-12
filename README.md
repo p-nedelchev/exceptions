@@ -1,2 +1,2 @@
-# exceptions
-Exceptions
+# Exceptions
+Practice writing custom exceptions.
