@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Demo {
     public static void main(String[] args) throws RangeException {
         Scanner scanner = new Scanner(System.in);
-        InputScanner checker = new InputScanner();
+        task2.rangeexception.Range checker = new task2.rangeexception.Range();
         int a;
         while (scanner.hasNext()) {
             a = scanner.nextInt();

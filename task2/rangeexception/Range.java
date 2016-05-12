@@ -3,7 +3,7 @@ package task2.rangeexception;
 /**
  * Created by clouway on 04.05.16.
  */
-public class InputScanner {
+public class Range {
     /**
      * Checks if the input is between 0 and 100
      * @param z Is for out of range and throws RangeException
