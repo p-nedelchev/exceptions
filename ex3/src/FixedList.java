@@ -11,31 +11,43 @@ public class FixedList {
         this.items = new Object[size];
     }
 
+    /**
+     * Adding item in items array.
+     *
+     * @param item Object that is added
+     * @throws ListFullException
+     */
     public void add(Object item) throws ListFullException {
-        if (index < items.length){
+        if (index < items.length) {
             items[index] = item;
             index++;
-        }else {
+        } else {
             throw new ListFullException();
         }
     }
 
-    public void remove()throws ListEmptyException {
+    /**
+     * Removes object from array.
+     *
+     * @throws ListEmptyException
+     */
+    public void remove() throws ListEmptyException {
 
-        if(items[index-1].equals(null)){
+        if (items[index - 1].equals(null)) {
             throw new ListEmptyException();
-        }
-        else {
-            items[index-1]=null;
+        } else {
+            items[index - 1] = null;
             index--;
         }
-
     }
 
+    /**
+     * Prints all array as a string
+     */
     public void printAllElements() {
 
-       for(int i=0; i<items.length; i++){
-           System.out.println(items[i]);
-       }
+        for (int i = 0; i < items.length; i++) {
+            System.out.println(items[i]);
+        }
     }
 }
