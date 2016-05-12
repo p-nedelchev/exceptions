@@ -8,11 +8,10 @@ import java.util.Scanner;
 public class Demo {
     public static void main(String[] args) throws RangeException {
         Scanner scanner = new Scanner(System.in);
-        task2.rangeexception.Range checker = new task2.rangeexception.Range();
-        int a;
-        while (scanner.hasNext()) {
-            a = scanner.nextInt();
-            checker.checkInput(a, 0, 100);
-        }
+        int z;
+        z = scanner.nextInt();
+        Range range = new Range(0,100);
+        range.checkInput(z);
+
     }
 }
