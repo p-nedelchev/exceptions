@@ -3,7 +3,7 @@ package task1;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class sumator {
+public class Sumator {
     public double sum() {
         //read two numbers from console and return the result
         Scanner scan = new Scanner(System.in);

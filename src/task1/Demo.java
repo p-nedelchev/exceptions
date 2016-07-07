@@ -2,7 +2,7 @@ package task1;
 
 public class Demo {
     public static void main(String[] args) {
-        sumator math = new sumator();
+        Sumator math = new Sumator();
         System.out.println("Result is: " + math.sum());
     }
 }
