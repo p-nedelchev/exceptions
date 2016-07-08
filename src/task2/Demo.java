@@ -1,12 +1,17 @@
 package task2;
 
+import java.util.Scanner;
+
 public class Demo {
-    public static void main(String[] args) {
-        readAndCheckValue value = new readAndCheckValue();
+    public static void main(String[] args) throws Exception {
+        Value value = new Value();
+        Scanner scan = new Scanner(System.in);
         try {
-            System.out.println(value.inputValue());
+            value.inputValue(scan.nextInt());
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            throw new OutOfRangeException("Wrong Value");
         }
+
     }
 }
+
