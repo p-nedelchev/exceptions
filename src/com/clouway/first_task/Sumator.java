@@ -12,10 +12,10 @@ public class Sumator {
      * @param b String second numeric string
      * @return Integer the sum of a and b
      */
-    public Integer sum(String a, String b) {
-        int sum = 0;
+    public Double sum(String a, String b) {
+        double sum = 0.0;
         try{
-           sum =Integer.parseInt(a) + Integer.parseInt(b);
+           sum =Double.parseDouble(a) + Double.parseDouble(b);
         } catch (NumberFormatException e) {
             System.out.println(e.getMessage());
         }
