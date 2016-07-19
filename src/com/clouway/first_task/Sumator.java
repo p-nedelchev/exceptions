@@ -7,7 +7,7 @@ public class Sumator {
 
 
     /**
-     * Parses the content of rwo numeric strings and calculates their sum
+     * Parses the content of two numeric strings and calculates their sum
      * @param a String first numeric string
      * @param b String second numeric string
      * @return Integer the sum of a and b
@@ -16,7 +16,7 @@ public class Sumator {
         double sum = 0.0;
         try{
            sum =Double.parseDouble(a) + Double.parseDouble(b);
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException | NullPointerException e) {
             System.out.println(e.getMessage());
         }
         return sum;

@@ -7,7 +7,7 @@ public class Demo {
     public static void main(String[] args) {
 
         Sumator sumator = new Sumator();
-        String a = "25.0";
+        String a = "3.14159";
         String b = "15";
         System.out.println(sumator.sum(a,b));
     }
