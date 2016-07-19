@@ -7,14 +7,9 @@ import java.util.InputMismatchException;
  */
 public class Demo {
     public static void main(String[] args) {
-
         Reader reader = new Reader();
         double number = 0.0;
-        try {
-            number = reader.read( 69, 100 );
-            System.out.println("Number is: " + number);
-        } catch (NumberOutOfBoundException | InputMismatchException ex) {
-            System.out.println(ex.getMessage());
-        }
+        number = reader.read( 69, 569);
+        System.out.println("Number is: " + number);
     }
 }

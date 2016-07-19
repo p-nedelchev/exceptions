@@ -4,7 +4,7 @@ package com.clouway.com.clouway.task_second;
 /**
  * @author Petar Nedelchev (peter.krasimirov@gmail.com)
  */
-public class NumberOutOfBoundException extends Exception {
+public class NumberOutOfBoundException extends RuntimeException {
 
     private static String message = "The number is out of bounds";
 
@@ -12,8 +12,8 @@ public class NumberOutOfBoundException extends Exception {
         super(message);
     }
 
-    public NumberOutOfBoundException(String s) {
-        super(s);
+    public NumberOutOfBoundException(String message) {
+        super(message);
     }
 
 }
