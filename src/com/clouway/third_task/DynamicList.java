@@ -19,10 +19,9 @@ public class DynamicList {
     public void add (Object element) {
         if (length == list.length) {
             throw new FullListException("The list is full. Can't add: " + element);
-        } else {
-            list[length] = element;
-            length++;
         }
+        list[length] = element;
+        length++;
     }
 
     /**
@@ -41,8 +40,7 @@ public class DynamicList {
     public void remove() {
         if (length == 0) {
             throw new EmptyListException();
-        } else {
-            length--;
         }
+        length--;
     }
 }
